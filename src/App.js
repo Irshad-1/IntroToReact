@@ -1,25 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
+import tempfile from "./Screenshot.png";
+let name="Irshad";
 
+// function Todos({todo,styles}){
+//   return <h1 style={styles}>{todo}</h1>;
+// }
 function App() {
+  // let styles={ color:"teal",fontSize:"32px"};
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // <div>
+    //   <h1 style={{color:"red",fontSize:"50px"}}>Hello World {55*5} {name}</h1>
+    //   <input type="text" placeholder='Add Email' />
+    //   <br/>
+    //   <img src="/logo192.png" alt="" height={400} width={400} />
+    //   <img src={tempfile} alt="" height={400} width={400} />
+    // </div>
+    <div>
+      <h1>Mobile Operating System</h1>
+      <ul>
+        {["Android","Blackberry","iPhone","Windows Phone"].map((el)=>{
+          return <li>{el}</li>
+        }
+        )}
+      </ul>
+      <h1>Mobile Manufacturers</h1>
+      <ul>
+        <li style={{listStyleType:"square"}}>Samsung</li>
+        <li style={{listStyleType:"square"}}>HTC</li>
+        <li>Micromax</li>
+        <li style={{listStyleType:"circle"}}>Apple</li>
+      </ul>
     </div>
+
+
   );
 }
 
-export default App;
+export {App};
